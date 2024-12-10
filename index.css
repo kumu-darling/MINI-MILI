@@ -1,0 +1,130 @@
+style.css
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: #333;
+    padding: 10px 0;
+    color: white;
+    text-align: center;
+}
+
+header .logo a {
+    font-size: 2rem;
+    text-decoration: none;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+nav .icon {
+    display: none;
+}
+
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+section#home {
+    background-color: #4CAF50;
+    color: white;
+}
+
+section#about, section#courses, section#events, section#contact {
+    background-color: #f4f4f4;
+}
+
+section#courses .course-list {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+section#courses .course-item {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 30%;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ddd;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+}
+
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    nav ul.responsive {
+        display: flex;
+    }
+
+    nav .icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    section#courses .course-list {
+        flex-direction: column;
+    }
+
+    section#courses .course-item {
+        width: 80%;
+        margin: 10px auto;
+    }
+}
